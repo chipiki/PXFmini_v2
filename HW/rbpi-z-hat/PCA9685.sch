@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 3 14
+Sheet 3 18
 Title "RasPi Zero NAV Hat"
 Date "2020-06-08"
 Rev "0.1"

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 4 14
+Sheet 15 18
 Title "RasPi Zero NAV Hat"
 Date "2020-06-08"
 Rev "0.1"
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Sensor_Motion:LSM9DS1 U4
+L Sensor_Motion:LSM9DS1 U8
 U 1 1 5F099D18
 P 4950 5350
-F 0 "U4" H 4400 6100 50  0000 C CNN
+F 0 "U8" H 4400 6100 50  0000 C CNN
 F 1 "LSM9DS1" H 5350 4600 50  0000 C CNN
 F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 6450 6100 50  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 4950 5450 50  0001 C CNN
@@ -51,115 +51,25 @@ Wire Wire Line
 Connection ~ 5750 5750
 Wire Wire Line
 	5750 5750 5750 5850
-Wire Wire Line
-	4700 7650 4700 7850
-Wire Wire Line
-	4700 8350 4700 8150
-$Comp
-L Device:Ferrite_Bead L?
-U 1 1 5ED7ECC1
-P 4300 7650
-AR Path="/5ED65008/5ED7ECC1" Ref="L?"  Part="1" 
-AR Path="/5F099163/5ED7ECC1" Ref="L10"  Part="1" 
-F 0 "L10" V 4550 7650 50  0000 C CNN
-F 1 "Ferrite_Bead" V 4450 7650 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 4230 7650 50  0001 C CNN
-F 3 "~" H 4300 7650 50  0001 C CNN
-	1    4300 7650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5ED7ECCD
-P 3900 8000
-AR Path="/5ED65008/5ED7ECCD" Ref="C?"  Part="1" 
-AR Path="/5F099163/5ED7ECCD" Ref="C17"  Part="1" 
-F 0 "C17" H 3900 8100 50  0000 L CNN
-F 1 "100nF" H 3900 7900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3938 7850 50  0001 C CNN
-F 3 "" H 3900 8000 50  0001 C CNN
-	1    3900 8000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 7400 3900 7650
-Wire Wire Line
-	4150 7650 3900 7650
-Connection ~ 3900 7650
-Wire Wire Line
-	3900 7650 3900 7850
-$Comp
-L power:GNDD #PWR?
-U 1 1 5ED7ECDF
-P 3900 8400
-AR Path="/5ED65008/5ED7ECDF" Ref="#PWR?"  Part="1" 
-AR Path="/5F099163/5ED7ECDF" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 3900 8150 50  0001 C CNN
-F 1 "GNDD" H 3904 8245 50  0000 C CNN
-F 2 "" H 3900 8400 50  0001 C CNN
-F 3 "" H 3900 8400 50  0001 C CNN
-	1    3900 8400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Ferrite_Bead L?
-U 1 1 5ED7ECE8
-P 4300 8350
-AR Path="/5ED65008/5ED7ECE8" Ref="L?"  Part="1" 
-AR Path="/5F099163/5ED7ECE8" Ref="L11"  Part="1" 
-F 0 "L11" V 4500 8350 50  0000 C CNN
-F 1 "Ferrite_Bead" V 4150 8350 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 4230 8350 50  0001 C CNN
-F 3 "~" H 4300 8350 50  0001 C CNN
-	1    4300 8350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3900 8150 3900 8350
-Wire Wire Line
-	4150 8350 3900 8350
-Connection ~ 3900 8350
-Wire Wire Line
-	3900 8350 3900 8400
-Connection ~ 4700 7650
-Connection ~ 4700 8350
-$Comp
-L power:+3.3V #PWR0108
-U 1 1 5ED867B4
-P 3900 7400
-F 0 "#PWR0108" H 3900 7250 50  0001 C CNN
-F 1 "+3.3V" H 3915 7573 50  0000 C CNN
-F 2 "" H 3900 7400 50  0001 C CNN
-F 3 "" H 3900 7400 50  0001 C CNN
-	1    3900 7400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 5ED8D4D0
-P 4700 8000
+P 5550 3750
 AR Path="/5ED663F7/5ED8D4D0" Ref="C?"  Part="1" 
 AR Path="/5F099163/5ED8D4D0" Ref="C19"  Part="1" 
-F 0 "C19" H 4725 8100 50  0000 L CNN
-F 1 "22uF/10V" H 4725 7900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 4738 7850 50  0001 C CNN
-F 3 "" H 4700 8000 50  0001 C CNN
-F 4 "https://www.terraelectronica.ru/product/1641498" H 4700 8000 50  0001 C CNN "URL"
-	1    4700 8000
-	1    0    0    -1  
+AR Path="/5EE06F22/5EE07E00/5ED8D4D0" Ref="C23"  Part="1" 
+F 0 "C23" V 5700 3750 50  0000 C CNN
+F 1 "4.7uF/10V" V 5400 3750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5588 3600 50  0001 C CNN
+F 3 "" H 5550 3750 50  0001 C CNN
+F 4 "https://www.terraelectronica.ru/product/1641498" H 5550 3750 50  0001 C CNN "URL"
+	1    5550 3750
+	0    -1   -1   0   
 $EndComp
-Text Notes 4800 8900 1    50   ~ 0
-CL31B226KPHNNNE
-Text Label 5400 8350 2    50   ~ 0
-LSM_DGND
-Text Label 5400 7650 2    50   ~ 0
-LSM_VDD
-Wire Wire Line
-	5050 6600 5500 6600
-Text Label 5500 6600 2    50   ~ 0
+Text Label 4850 6850 2    50   ~ 0
 LSM_DGND
 Wire Wire Line
-	5050 6600 5050 6450
+	5050 6850 5050 6450
 Connection ~ 5050 6450
 Wire Wire Line
 	5050 6450 5750 6450
@@ -172,7 +82,8 @@ U 1 1 5EDA2F32
 P 4100 6200
 AR Path="/5ED65008/5EDA2F32" Ref="C?"  Part="1" 
 AR Path="/5F099163/5EDA2F32" Ref="C23"  Part="1" 
-F 0 "C23" H 3950 6300 50  0000 L CNN
+AR Path="/5EE06F22/5EE07E00/5EDA2F32" Ref="C27"  Part="1" 
+F 0 "C27" H 3950 6300 50  0000 L CNN
 F 1 "0.1uF" H 3850 6100 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4138 6050 50  0001 C CNN
 F 3 "" H 4100 6200 50  0001 C CNN
@@ -194,7 +105,8 @@ U 1 1 5EDA5421
 P 3800 6200
 AR Path="/5ED65008/5EDA5421" Ref="C?"  Part="1" 
 AR Path="/5F099163/5EDA5421" Ref="C22"  Part="1" 
-F 0 "C22" H 3650 6300 50  0000 L CNN
+AR Path="/5EE06F22/5EE07E00/5EDA5421" Ref="C26"  Part="1" 
+F 0 "C26" H 3650 6300 50  0000 L CNN
 F 1 "10nF/16V" H 3850 6100 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3838 6050 50  0001 C CNN
 F 3 "" H 3800 6200 50  0001 C CNN
@@ -228,7 +140,8 @@ U 1 1 5EDA90B3
 P 4750 4150
 AR Path="/5ED65008/5EDA90B3" Ref="C?"  Part="1" 
 AR Path="/5F099163/5EDA90B3" Ref="C20"  Part="1" 
-F 0 "C20" V 4900 4150 50  0000 C CNN
+AR Path="/5EE06F22/5EE07E00/5EDA90B3" Ref="C24"  Part="1" 
+F 0 "C24" V 4900 4150 50  0000 C CNN
 F 1 "0.1uF" V 4600 4150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4788 4000 50  0001 C CNN
 F 3 "" H 4750 4150 50  0001 C CNN
@@ -241,7 +154,8 @@ U 1 1 5EDAA4FE
 P 5550 4150
 AR Path="/5ED65008/5EDAA4FE" Ref="C?"  Part="1" 
 AR Path="/5F099163/5EDAA4FE" Ref="C21"  Part="1" 
-F 0 "C21" V 5400 4150 50  0000 C CNN
+AR Path="/5EE06F22/5EE07E00/5EDAA4FE" Ref="C25"  Part="1" 
+F 0 "C25" V 5400 4150 50  0000 C CNN
 F 1 "0.1uF" V 5700 4150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5588 4000 50  0001 C CNN
 F 3 "" H 5550 4150 50  0001 C CNN
@@ -262,13 +176,8 @@ Wire Wire Line
 Connection ~ 5300 4400
 Wire Wire Line
 	5300 4400 5350 4400
-Wire Wire Line
-	5000 4150 5150 4150
 Connection ~ 5000 4150
 Connection ~ 5300 4150
-Connection ~ 5150 4150
-Wire Wire Line
-	5150 4150 5300 4150
 Wire Wire Line
 	5700 4150 6150 4150
 Text Label 6150 4150 2    50   ~ 0
@@ -277,10 +186,6 @@ Wire Wire Line
 	4600 4150 4150 4150
 Text Label 4150 4150 0    50   ~ 0
 LSM_DGND
-Text Label 5150 3550 3    50   ~ 0
-LSM_VDD
-Wire Wire Line
-	5150 3550 5150 4150
 Text Notes 2900 6600 0    50   ~ 0
 Must guarantee 1 nF value\nunder 11 V bias condition
 Wire Wire Line
@@ -358,11 +263,24 @@ Connection ~ 2700 5250
 Wire Wire Line
 	2700 5250 3050 5250
 Wire Wire Line
-	4700 8350 5400 8350
+	5050 3750 5300 3750
 Wire Wire Line
-	4700 7650 5400 7650
+	4300 6850 5050 6850
+Text HLabel 5050 3750 0    50   Input ~ 0
+LSM_VDD
+Text HLabel 4300 6850 0    50   Input ~ 0
+LSM_GND
 Wire Wire Line
-	4450 7650 4700 7650
+	5000 4150 5300 4150
 Wire Wire Line
-	4450 8350 4700 8350
+	5300 4150 5300 3750
+Wire Wire Line
+	5300 3750 5400 3750
+Wire Wire Line
+	5700 3750 6150 3750
+Text Label 6150 3750 2    50   ~ 0
+LSM_DGND
+Connection ~ 5300 3750
+Text Notes 5200 3550 0    50   ~ 0
+CL21B475KPFNNNE
 $EndSCHEMATC

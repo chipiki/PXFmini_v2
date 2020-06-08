@@ -1,5 +1,5 @@
 (fp_lib_table
-  (lib (name MS5611)(type KiCad)(uri /home/denis/Документы/rbpi-z-hat/Libraries/Footprints/MS5611.pretty)(options "")(descr ""))
-  (lib (name BQ24315DSGR)(type KiCad)(uri /home/denis/Документы/rbpi-z-hat/Libraries/Footprints/BQ24315DSGR.pretty)(options "")(descr ""))
-  (lib (name NFM21PC105B1C3D)(type KiCad)(uri /home/denis/Документы/rbpi-z-hat/Libraries/Footprints/NFM21PC105B1C3D.pretty)(options "")(descr ""))
+  (lib (name MS5611)(type KiCad)(uri /home/denis/Документы/PXFmini_v2/HW/rbpi-z-hat/Libraries/Footprints/MS5611.pretty)(options "")(descr ""))
+  (lib (name BQ24315DSGR)(type KiCad)(uri /home/denis/Документы/PXFmini_v2/HW/rbpi-z-hat/Libraries/Footprints/BQ24315DSGR.pretty)(options "")(descr ""))
+  (lib (name NFM21PC105B1C3D)(type KiCad)(uri /home/denis/Документы/PXFmini_v2/HW/rbpi-z-hat/Libraries/Footprints/NFM21PC105B1C3D.pretty)(options "")(descr ""))
 )

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ICM-42688-P
+D The ICM-42688-Pis a 6-axis MEMS MotionTracking device that combines a 3-axis gyroscope and a 3-axis accelerometer. It has a configurable host interface that supports I3CSM, I2C and SPI serial communication, features a 2kBFIFO and 2 programmable interrupts with ultra-low-power wake-on-motion support to minimize system power consumption.
+K IMU ICM MPU Gyro
+F http://invensense.tdk.com/wp-content/uploads/2020/04/DS-000347-ICM-42688-P-v1.2.pdf
+$ENDCMP
+#
+#End Doc Library
