@@ -46,23 +46,8 @@ F 3 "~" H 4800 4800 50  0001 C CNN
 	1    4800 4800
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GNDD #PWR?
-U 1 1 5EF0CA1D
-P 5000 4900
-AR Path="/5EDD13AE/5EF0CA1D" Ref="#PWR?"  Part="1" 
-AR Path="/5EF0850C/5EF0CA1D" Ref="#PWR0135"  Part="1" 
-F 0 "#PWR0135" H 5000 4650 50  0001 C CNN
-F 1 "GNDD" H 5004 4745 50  0000 C CNN
-F 2 "" H 5000 4900 50  0001 C CNN
-F 3 "" H 5000 4900 50  0001 C CNN
-	1    5000 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5000 4800 5000 4900
-Wire Wire Line
-	4950 4800 5000 4800
+	4950 4800 5350 4800
 Wire Wire Line
 	4550 5000 4550 4800
 Wire Wire Line
@@ -229,4 +214,6 @@ Text Label 5000 4450 2    50   ~ 0
 ADS_VDD
 Wire Wire Line
 	4550 4450 4550 4800
+Text Label 5350 4800 2    50   ~ 0
+ADS_GND
 $EndSCHEMATC

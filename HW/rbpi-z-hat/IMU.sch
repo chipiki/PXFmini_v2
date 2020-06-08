@@ -62,62 +62,62 @@ Wire Wire Line
 $Comp
 L Device:Ferrite_Bead L?
 U 1 1 5EE0B780
-P 3850 6650
+P 3550 6650
 AR Path="/5ED663F7/5EE0B780" Ref="L?"  Part="1" 
 AR Path="/5EF65A4D/5EF663FB/5EE0B780" Ref="L?"  Part="1" 
 AR Path="/5EF65A4D/5EE0B780" Ref="L?"  Part="1" 
 AR Path="/5EE06F22/5EE0B780" Ref="L10"  Part="1" 
-F 0 "L10" V 4100 6650 50  0000 C CNN
-F 1 "Ferrite_Bead" V 4000 6650 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 3780 6650 50  0001 C CNN
-F 3 "~" H 3850 6650 50  0001 C CNN
-	1    3850 6650
+F 0 "L10" V 3800 6650 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3700 6650 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 3480 6650 50  0001 C CNN
+F 3 "~" H 3550 6650 50  0001 C CNN
+	1    3550 6650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5EE0B786
-P 3500 7200
+P 3200 7200
 AR Path="/5ED663F7/5EE0B786" Ref="C?"  Part="1" 
 AR Path="/5EF65A4D/5EF663FB/5EE0B786" Ref="C?"  Part="1" 
 AR Path="/5EF65A4D/5EE0B786" Ref="C?"  Part="1" 
 AR Path="/5EE06F22/5EE0B786" Ref="C22"  Part="1" 
-F 0 "C22" H 3550 7300 50  0000 L CNN
-F 1 "100nF" H 3550 7100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3538 7050 50  0001 C CNN
-F 3 "" H 3500 7200 50  0001 C CNN
-	1    3500 7200
+F 0 "C22" H 3250 7300 50  0000 L CNN
+F 1 "100nF" H 3250 7100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3238 7050 50  0001 C CNN
+F 3 "" H 3200 7200 50  0001 C CNN
+	1    3200 7200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 6650 3500 6650
+	2950 6650 3200 6650
 Wire Wire Line
-	3700 6650 3500 6650
-Connection ~ 3500 6650
+	3400 6650 3200 6650
+Connection ~ 3200 6650
 Wire Wire Line
-	3500 6650 3500 7050
+	3200 6650 3200 7050
 Wire Wire Line
-	3500 7350 3500 7750
+	3200 7350 3200 7750
 $Comp
 L Device:Ferrite_Bead L?
 U 1 1 5EE0B798
-P 3850 7750
+P 3550 7750
 AR Path="/5ED663F7/5EE0B798" Ref="L?"  Part="1" 
 AR Path="/5EF65A4D/5EF663FB/5EE0B798" Ref="L?"  Part="1" 
 AR Path="/5EF65A4D/5EE0B798" Ref="L?"  Part="1" 
 AR Path="/5EE06F22/5EE0B798" Ref="L11"  Part="1" 
-F 0 "L11" V 4050 7750 50  0000 C CNN
-F 1 "Ferrite_Bead" V 3700 7750 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 3780 7750 50  0001 C CNN
-F 3 "~" H 3850 7750 50  0001 C CNN
-	1    3850 7750
+F 0 "L11" V 3750 7750 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3400 7750 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 3480 7750 50  0001 C CNN
+F 3 "~" H 3550 7750 50  0001 C CNN
+	1    3550 7750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3700 7750 3500 7750
-Connection ~ 3500 7750
+	3400 7750 3200 7750
+Connection ~ 3200 7750
 Wire Wire Line
-	3500 7750 3250 7750
+	3200 7750 2950 7750
 Text Label 5550 6650 2    50   ~ 0
 IMU_VDD
 Text Label 4550 7750 2    50   ~ 0
@@ -141,12 +141,12 @@ Wire Wire Line
 Text Label 3750 5450 0    50   ~ 0
 IMU_VDD
 Wire Wire Line
-	4000 6650 4200 6650
+	3700 6650 4200 6650
 Wire Wire Line
-	4000 7750 4550 7750
-Text HLabel 3250 6650 0    50   Input ~ 0
+	3700 7750 4150 7750
+Text HLabel 2950 6650 0    50   Input ~ 0
 IMU_VIN
-Text HLabel 3250 7750 0    50   Input ~ 0
+Text HLabel 2950 7750 0    50   Input ~ 0
 IMU_GND
 Wire Wire Line
 	3750 3300 4200 3300
@@ -228,4 +228,43 @@ Wire Wire Line
 	4200 4100 2850 4100
 Text HLabel 2850 4100 0    50   Input ~ 0
 MPU_INT
+Wire Wire Line
+	4150 7750 4150 6850
+Wire Wire Line
+	4150 6850 4200 6850
+Connection ~ 4150 7750
+Wire Wire Line
+	4150 7750 4550 7750
+Wire Wire Line
+	4200 2650 4050 2650
+Wire Wire Line
+	4200 2750 4050 2750
+Wire Wire Line
+	4200 2850 4050 2850
+Wire Wire Line
+	4200 2950 4050 2950
+Wire Wire Line
+	4200 3050 4050 3050
+Wire Wire Line
+	4200 5200 3750 5200
+Wire Wire Line
+	4200 5300 3750 5300
+Text HLabel 3750 5200 0    50   Output ~ 0
+ICM_INT1
+Text HLabel 3750 5300 0    50   Output ~ 0
+ICM_INT2
+Text HLabel 4050 2650 0    50   Output ~ 0
+LSM_DEN
+Text HLabel 4050 2750 0    50   Output ~ 0
+LSM_INT1
+Text HLabel 4050 2850 0    50   Output ~ 0
+LSM_INT2
+Text HLabel 4050 2950 0    50   Output ~ 0
+LSM_INT3
+Text HLabel 4050 3050 0    50   Output ~ 0
+LSM_INT4
+Wire Wire Line
+	4200 6750 4150 6750
+Text HLabel 4150 6750 0    50   Input ~ 0
+SENS_EN
 $EndSCHEMATC
