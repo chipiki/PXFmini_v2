@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BQ24315DSGR
+D OVERVOLTAGE AND OVERCURRENT PROTECTION IC AND%D Li+ CHARGER FRONT-END PROTECTION IC
+K
+F http://www.ti.com/lit/ds/symlink/bq24315.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1590126014085
+$ENDCMP
+#
+#End Doc Library

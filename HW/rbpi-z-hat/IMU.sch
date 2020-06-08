@@ -1,0 +1,290 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 2 14
+Title "RasPi Zero NAV Hat"
+Date "2020-06-08"
+Rev "0.1"
+Comp "chipiki.ru"
+Comment1 "RasPi Zero NAV Hat"
+Comment2 "Denis Tsekh"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Motion:MPU-9250 U1
+U 1 1 5B07566F
+P 3500 5950
+F 0 "U1" H 3050 6700 50  0000 C CNN
+F 1 "MPU-9250" H 3800 5200 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_3x3mm_P0.4mm_EP1.75x1.6mm" H 3500 4950 50  0001 C CNN
+F 3 "" H 3500 5800 50  0001 C CNN
+	1    3500 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6850 3500 6950
+$Comp
+L Device:C C7
+U 1 1 5B075695
+P 4500 6450
+F 0 "C7" H 4400 6350 50  0000 C CNN
+F 1 "0.1uF" H 4350 6550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 6300 50  0001 C CNN
+F 3 "" H 4500 6450 50  0001 C CNN
+	1    4500 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 6150 4500 6150
+Wire Wire Line
+	4200 6350 4250 6350
+Wire Wire Line
+	4250 6350 4250 6950
+$Comp
+L Device:C C3
+U 1 1 5B0756B4
+P 3150 4550
+F 0 "C3" V 3000 4550 50  0000 C CNN
+F 1 "10nF" V 3300 4550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3188 4400 50  0001 C CNN
+F 3 "" H 3150 4550 50  0001 C CNN
+	1    3150 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 4550 2550 4550
+Wire Wire Line
+	3300 4550 3400 4550
+Connection ~ 3400 4550
+NoConn ~ 4200 5950
+NoConn ~ 4200 5850
+$Comp
+L Device:R R3
+U 1 1 5B0756E4
+P 2650 6400
+F 0 "R3" V 2730 6400 50  0000 C CNN
+F 1 "10K" V 2650 6400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2580 6400 50  0001 C CNN
+F 3 "" H 2650 6400 50  0001 C CNN
+	1    2650 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6150 2650 6150
+Wire Wire Line
+	2650 6150 2650 6250
+Wire Wire Line
+	2650 6550 2650 6600
+Connection ~ 2650 6600
+$Comp
+L Device:R R2
+U 1 1 5B0756F5
+P 2500 6400
+F 0 "R2" V 2580 6400 50  0000 C CNN
+F 1 "10K" V 2500 6400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2430 6400 50  0001 C CNN
+F 3 "" H 2500 6400 50  0001 C CNN
+	1    2500 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6600 2500 6600
+Wire Wire Line
+	2500 6600 2500 6550
+Wire Wire Line
+	2250 5750 2500 5750
+Wire Wire Line
+	2500 5750 2500 6250
+Connection ~ 2500 5750
+Wire Wire Line
+	4200 5650 4250 5650
+Wire Wire Line
+	3400 4550 3400 5050
+Wire Wire Line
+	2650 6600 2650 6950
+Wire Wire Line
+	2500 5750 2800 5750
+Text HLabel 2250 5650 0    50   Input ~ 0
+MPU_MOSI
+Text HLabel 2250 5750 0    50   Output ~ 0
+MPU_MISO
+Text HLabel 2250 5850 0    50   Input ~ 0
+MPU_SCLK
+Text HLabel 2250 5950 0    50   Input ~ 0
+MPU_nCS
+Text HLabel 4650 5650 2    50   Output ~ 0
+MPU_INT
+$Comp
+L Device:C C5
+U 1 1 5AFF778B
+P 5250 4800
+F 0 "C5" H 5275 4900 50  0000 L CNN
+F 1 "100nF" H 5275 4700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5288 4650 50  0001 C CNN
+F 3 "" H 5250 4800 50  0001 C CNN
+	1    5250 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4550 5250 4650
+Wire Wire Line
+	5250 4550 5650 4550
+Wire Wire Line
+	5650 4550 5650 4650
+Connection ~ 5250 4550
+Wire Wire Line
+	5250 5150 5250 4950
+Wire Wire Line
+	5250 5150 5650 5150
+Wire Wire Line
+	5650 5150 5650 4950
+Connection ~ 5250 5150
+Wire Wire Line
+	3600 4550 3600 5050
+Wire Wire Line
+	3600 4550 5050 4550
+Wire Wire Line
+	3600 4550 3400 4550
+Connection ~ 3600 4550
+Wire Wire Line
+	2250 5950 2800 5950
+Wire Wire Line
+	2250 5850 2800 5850
+Wire Wire Line
+	2250 5650 2800 5650
+$Comp
+L Device:R R1
+U 1 1 5B03345C
+P 4400 5650
+F 0 "R1" V 4480 5650 50  0000 C CNN
+F 1 "120" V 4400 5650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 5650 50  0001 C CNN
+F 3 "" H 4400 5650 50  0001 C CNN
+	1    4400 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 5650 4650 5650
+$Comp
+L Device:Ferrite_Bead L1
+U 1 1 5B0D04F6
+P 6050 4550
+F 0 "L1" V 6300 4550 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6200 4550 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 5980 4550 50  0001 C CNN
+F 3 "~" H 6050 4550 50  0001 C CNN
+	1    6050 4550
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5B0D0503
+P 6450 4800
+F 0 "C1" H 6300 4900 50  0000 L CNN
+F 1 "100nF" H 6200 4700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6488 4650 50  0001 C CNN
+F 3 "" H 6450 4800 50  0001 C CNN
+	1    6450 4800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4300 6450 4550
+Wire Wire Line
+	6200 4550 6450 4550
+Connection ~ 6450 4550
+Wire Wire Line
+	6450 4550 6450 4650
+$Comp
+L power:GNDD #PWR0109
+U 1 1 5B0D0517
+P 6450 5200
+F 0 "#PWR0109" H 6450 4950 50  0001 C CNN
+F 1 "GNDD" H 6454 5045 50  0000 C CNN
+F 2 "" H 6450 5200 50  0001 C CNN
+F 3 "" H 6450 5200 50  0001 C CNN
+	1    6450 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead L4
+U 1 1 5ED890A0
+P 6050 5150
+F 0 "L4" V 6150 5250 50  0000 C CNN
+F 1 "Ferrite_Bead" V 5900 5150 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 5980 5150 50  0001 C CNN
+F 3 "~" H 6050 5150 50  0001 C CNN
+	1    6050 5150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6450 4950 6450 5150
+Wire Wire Line
+	6200 5150 6450 5150
+Connection ~ 6450 5150
+Wire Wire Line
+	6450 5150 6450 5200
+Connection ~ 5650 4550
+Connection ~ 5650 5150
+Wire Wire Line
+	2650 6950 3500 6950
+Wire Wire Line
+	3500 6950 4250 6950
+Connection ~ 3500 6950
+Wire Wire Line
+	4250 6950 4500 6950
+Connection ~ 4250 6950
+Wire Wire Line
+	4500 6150 4500 6300
+Wire Wire Line
+	4500 6600 4500 6950
+Connection ~ 4500 6950
+Wire Wire Line
+	5250 6950 5250 5150
+Wire Wire Line
+	4500 6950 5250 6950
+Text Label 2550 4550 0    50   ~ 0
+MPU_FGND
+Text Label 4700 6950 0    50   ~ 0
+MPU_FGND
+Wire Wire Line
+	5050 6250 5050 4550
+Wire Wire Line
+	4200 6250 5050 6250
+Connection ~ 5050 4550
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5ED87240
+P 6450 4300
+F 0 "#PWR0106" H 6450 4150 50  0001 C CNN
+F 1 "+3.3V" H 6465 4473 50  0000 C CNN
+F 2 "" H 6450 4300 50  0001 C CNN
+F 3 "" H 6450 4300 50  0001 C CNN
+	1    6450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5ED8B780
+P 5650 4800
+AR Path="/5ED663F7/5ED8B780" Ref="C?"  Part="1" 
+AR Path="/5ED65008/5ED8B780" Ref="C6"  Part="1" 
+F 0 "C6" H 5675 4900 50  0000 L CNN
+F 1 "22uF/10V" H 5675 4700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5688 4650 50  0001 C CNN
+F 3 "" H 5650 4800 50  0001 C CNN
+F 4 "https://www.terraelectronica.ru/product/1641498" H 5650 4800 50  0001 C CNN "URL"
+	1    5650 4800
+	1    0    0    -1  
+$EndComp
+Text Notes 5750 5700 1    50   ~ 0
+CL31B226KPHNNNE
+Wire Wire Line
+	5650 5150 5900 5150
+Wire Wire Line
+	5650 4550 5900 4550
+Wire Wire Line
+	5050 4550 5250 4550
+$EndSCHEMATC

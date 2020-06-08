@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DC-DC_mini360
+D DC-DC mini360
+K DC-DC mini360
+$ENDCMP
+#
+$CMP td1509p5
+D TD1509 - 2A 150KHz PWM Buck DC/DC Converte
+K TD1509p5
+F http://www.techcodesemi.com/datasheet/TD1509.pdf
+$ENDCMP
+#
+#End Doc Library

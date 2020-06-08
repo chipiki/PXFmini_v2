@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MS5611
+D MS5611 - barometric sensor with high resolution
+K MS5611
+$ENDCMP
+#
+#End Doc Library

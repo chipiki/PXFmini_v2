@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 5 14
+Title "RasPi Zero NAV Hat"
+Date "2020-06-08"
+Rev "0.1"
+Comp "chipiki.ru"
+Comment1 "RasPi Zero NAV Hat"
+Comment2 "Denis Tsekh"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5200 4700 700  750 
+U 5EF663FB
+F0 "MS5611" 50
+F1 "MS5611.sch" 50
+F2 "MS_nCS" I L 5200 5100 50 
+F3 "MS_MOSI" I L 5200 4800 50 
+F4 "MS_SCK" I L 5200 5000 50 
+F5 "MS_MISO" O L 5200 4900 50 
+F6 "MS_VDD" U L 5200 5250 50 
+F7 "MS_GND" U L 5200 5350 50 
+$EndSheet
+$Sheet
+S 5200 5650 700  750 
+U 5EF663FD
+F0 "BMP280" 50
+F1 "BMP280.sch" 50
+F2 "BMP_SCK" I L 5200 5950 50 
+F3 "BMP_MOSI" I L 5200 5750 50 
+F4 "BMP_MISO" O L 5200 5850 50 
+F5 "BMP_nCS" I L 5200 6050 50 
+F6 "BMP_VDD" U L 5200 6200 50 
+F7 "BPM_GND" U L 5200 6300 50 
+$EndSheet
+Wire Wire Line
+	4250 5000 3800 5000
+Wire Wire Line
+	3800 5000 3800 5400
+Wire Wire Line
+	4250 6100 3800 6100
+Wire Wire Line
+	3800 6100 3800 5700
+$Comp
+L Device:Ferrite_Bead L?
+U 1 1 5EF7256D
+P 3450 5000
+AR Path="/5ED663F7/5EF7256D" Ref="L?"  Part="1" 
+AR Path="/5EF65A4D/5EF663FB/5EF7256D" Ref="L?"  Part="1" 
+AR Path="/5EF65A4D/5EF7256D" Ref="L2"  Part="1" 
+F 0 "L2" V 3700 5000 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3600 5000 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 3380 5000 50  0001 C CNN
+F 3 "~" H 3450 5000 50  0001 C CNN
+	1    3450 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EF72573
+P 3200 5550
+AR Path="/5ED663F7/5EF72573" Ref="C?"  Part="1" 
+AR Path="/5EF65A4D/5EF663FB/5EF72573" Ref="C?"  Part="1" 
+AR Path="/5EF65A4D/5EF72573" Ref="C12"  Part="1" 
+F 0 "C12" H 3250 5650 50  0000 L CNN
+F 1 "100nF" H 3250 5450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3238 5400 50  0001 C CNN
+F 3 "" H 3200 5550 50  0001 C CNN
+	1    3200 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4750 3200 5000
+Wire Wire Line
+	3300 5000 3200 5000
+Connection ~ 3200 5000
+Wire Wire Line
+	3200 5000 3200 5400
+$Comp
+L power:GNDD #PWR?
+U 1 1 5EF7257D
+P 3200 6250
+AR Path="/5ED663F7/5EF7257D" Ref="#PWR?"  Part="1" 
+AR Path="/5EF65A4D/5EF663FB/5EF7257D" Ref="#PWR?"  Part="1" 
+AR Path="/5EF65A4D/5EF7257D" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 3200 6000 50  0001 C CNN
+F 1 "GNDD" H 3204 6095 50  0000 C CNN
+F 2 "" H 3200 6250 50  0001 C CNN
+F 3 "" H 3200 6250 50  0001 C CNN
+	1    3200 6250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 5000
+Wire Wire Line
+	3200 5700 3200 6100
+$Comp
+L Device:Ferrite_Bead L?
+U 1 1 5EF72585
+P 3450 6100
+AR Path="/5ED663F7/5EF72585" Ref="L?"  Part="1" 
+AR Path="/5EF65A4D/5EF663FB/5EF72585" Ref="L?"  Part="1" 
+AR Path="/5EF65A4D/5EF72585" Ref="L3"  Part="1" 
+F 0 "L3" V 3650 6100 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3300 6100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 3380 6100 50  0001 C CNN
+F 3 "~" H 3450 6100 50  0001 C CNN
+	1    3450 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 6100 3200 6100
+Connection ~ 3200 6100
+Wire Wire Line
+	3200 6100 3200 6250
+Connection ~ 3800 6100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EF7258F
+P 3200 4750
+AR Path="/5ED663F7/5EF7258F" Ref="#PWR?"  Part="1" 
+AR Path="/5EF65A4D/5EF663FB/5EF7258F" Ref="#PWR?"  Part="1" 
+AR Path="/5EF65A4D/5EF7258F" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 3200 4600 50  0001 C CNN
+F 1 "+3.3V" H 3215 4923 50  0000 C CNN
+F 2 "" H 3200 4750 50  0001 C CNN
+F 3 "" H 3200 4750 50  0001 C CNN
+	1    3200 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EF72596
+P 3800 5550
+AR Path="/5ED663F7/5EF72596" Ref="C?"  Part="1" 
+AR Path="/5EF65A4D/5EF663FB/5EF72596" Ref="C?"  Part="1" 
+AR Path="/5EF65A4D/5EF72596" Ref="C10"  Part="1" 
+F 0 "C10" H 3650 5650 50  0000 L CNN
+F 1 "22uF/10V" H 3400 5450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3838 5400 50  0001 C CNN
+F 3 "" H 3800 5550 50  0001 C CNN
+F 4 "https://www.terraelectronica.ru/product/1641498" H 3800 5550 50  0001 C CNN "URL"
+	1    3800 5550
+	-1   0    0    -1  
+$EndComp
+Text Notes 3700 5950 1    50   ~ 0
+CL31B226KPHNNNE
+Wire Wire Line
+	3800 5000 3600 5000
+Wire Wire Line
+	3800 6100 3600 6100
+Text Label 4250 5000 2    50   ~ 0
+BARO_VDD
+Text Label 4250 6100 2    50   ~ 0
+BARO_GND
+Wire Wire Line
+	4750 5250 5200 5250
+Text Label 4750 5250 0    50   ~ 0
+BARO_VDD
+Wire Wire Line
+	4750 5350 5200 5350
+Text Label 4750 5350 0    50   ~ 0
+BARO_GND
+Wire Wire Line
+	4750 6200 5200 6200
+Text Label 4750 6200 0    50   ~ 0
+BARO_VDD
+Wire Wire Line
+	4750 6300 5200 6300
+Text Label 4750 6300 0    50   ~ 0
+BARO_GND
+$EndSCHEMATC

@@ -1,0 +1,369 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 10 14
+Title "RasPi Zero NAV Hat"
+Date "2020-06-08"
+Rev "0.1"
+Comp "chipiki.ru"
+Comment1 "RasPi Zero NAV Hat"
+Comment2 "Denis Tsekh"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C_Feedthrough C?
+U 1 1 5EDD329B
+P 4750 3900
+AR Path="/5F0378CD/5EDD329B" Ref="C?"  Part="1" 
+AR Path="/5EDD13AE/5EDD329B" Ref="C?"  Part="1" 
+F 0 "C?" H 4750 4100 50  0000 C CNN
+F 1 "1uF/16V/0805/NFM21PC105B1C3D" H 4750 4400 50  0000 C CNN
+F 2 "NFM21PC105B1C3D:NFM21PC105B1C3D" V 4750 3900 50  0001 C CNN
+F 3 "~" V 4750 3900 50  0001 C CNN
+	1    4750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 5EDD32A1
+P 5200 4100
+AR Path="/5F0378CD/5EDD32A1" Ref="D?"  Part="1" 
+AR Path="/5EDD13AE/5EDD32A1" Ref="D?"  Part="1" 
+F 0 "D?" V 5050 4150 50  0000 L CNN
+F 1 "PESD0402-140" H 5200 4000 50  0000 C CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 5200 4100 50  0001 C CNN
+F 3 "~" H 5200 4100 50  0001 C CNN
+	1    5200 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 5EDD32A7
+P 4100 3800
+AR Path="/5F0378CD/5EDD32A7" Ref="FB?"  Part="1" 
+AR Path="/5EDD13AE/5EDD32A7" Ref="FB?"  Part="1" 
+F 0 "FB?" V 3826 3800 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3917 3800 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 4030 3800 50  0001 C CNN
+F 3 "~" H 4100 3800 50  0001 C CNN
+	1    4100 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3800 5200 3800
+Wire Wire Line
+	5200 3950 5200 3800
+Connection ~ 5200 3800
+Wire Wire Line
+	4250 3800 4550 3800
+Wire Wire Line
+	5200 3800 5650 3800
+$Comp
+L power:GNDD #PWR?
+U 1 1 5EDD32B2
+P 5200 4400
+AR Path="/5F0378CD/5EDD32B2" Ref="#PWR?"  Part="1" 
+AR Path="/5EDD13AE/5EDD32B2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5200 4150 50  0001 C CNN
+F 1 "GNDD" H 5204 4245 50  0000 C CNN
+F 2 "" H 5200 4400 50  0001 C CNN
+F 3 "" H 5200 4400 50  0001 C CNN
+	1    5200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5EDD32B8
+P 4750 4100
+AR Path="/5F0378CD/5EDD32B8" Ref="#PWR?"  Part="1" 
+AR Path="/5EDD13AE/5EDD32B8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4750 3850 50  0001 C CNN
+F 1 "GNDD" H 4754 3945 50  0000 C CNN
+F 2 "" H 4750 4100 50  0001 C CNN
+F 3 "" H 4750 4100 50  0001 C CNN
+	1    4750 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4000 4750 4100
+Wire Wire Line
+	5200 4400 5200 4250
+Wire Wire Line
+	3950 3800 3700 3800
+Wire Wire Line
+	3700 3800 3700 3550
+$Comp
+L power:+5V #PWR?
+U 1 1 5EDD32C2
+P 3700 3550
+AR Path="/5F0378CD/5EDD32C2" Ref="#PWR?"  Part="1" 
+AR Path="/5EDD13AE/5EDD32C2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 3400 50  0001 C CNN
+F 1 "+5V" H 3715 3723 50  0000 C CNN
+F 2 "" H 3700 3550 50  0001 C CNN
+F 3 "" H 3700 3550 50  0001 C CNN
+	1    3700 3550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4750 3650 4750 3450
+$Comp
+L Connector_Generic_MountingPin:Conn_01x04_MountingPin J?
+U 1 1 5EDD38F4
+P 6050 5700
+F 0 "J?" H 6050 5900 50  0000 C CNN
+F 1 "JST_GH" V 6150 5700 50  0000 C CNN
+F 2 "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical" H 6050 5700 50  0001 C CNN
+F 3 "~" H 6050 5700 50  0001 C CNN
+	1    6050 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5EDD6463
+P 5650 6600
+F 0 "#PWR?" H 5650 6350 50  0001 C CNN
+F 1 "GNDD" H 5654 6445 50  0000 C CNN
+F 2 "" H 5650 6600 50  0001 C CNN
+F 3 "" H 5650 6600 50  0001 C CNN
+	1    5650 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 5EDD6469
+P 5650 6250
+F 0 "FB?" H 5500 6200 50  0000 C CNN
+F 1 "Ferrite_Bead" H 5350 6400 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 5580 6250 50  0001 C CNN
+F 3 "~" H 5650 6250 50  0001 C CNN
+	1    5650 6250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 6400 5650 6600
+$Comp
+L power:GNDD #PWR?
+U 1 1 5EDD6470
+P 6050 6600
+F 0 "#PWR?" H 6050 6350 50  0001 C CNN
+F 1 "GNDD" H 6054 6445 50  0000 C CNN
+F 2 "" H 6050 6600 50  0001 C CNN
+F 3 "" H 6050 6600 50  0001 C CNN
+	1    6050 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 6100 6050 6600
+Wire Wire Line
+	5850 5900 5650 5900
+Wire Wire Line
+	5650 5900 5650 6100
+Wire Wire Line
+	5650 3800 5650 5600
+Wire Wire Line
+	5650 5600 5850 5600
+$Comp
+L Interface:PCA9306DC U?
+U 1 1 5EDDAC68
+P 3750 5700
+F 0 "U?" H 3950 6150 50  0000 C CNN
+F 1 "PCA9306DC" H 4000 5250 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 3750 5250 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCA9306.pdf" H 3450 6150 50  0001 C CNN
+	1    3750 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5EDDD16D
+P 3750 6400
+F 0 "#PWR?" H 3750 6150 50  0001 C CNN
+F 1 "GNDD" H 3754 6245 50  0000 C CNN
+F 2 "" H 3750 6400 50  0001 C CNN
+F 3 "" H 3750 6400 50  0001 C CNN
+	1    3750 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 6200 3750 6400
+$Comp
+L Power_Protection:SP0502BAHT D?
+U 1 1 5EDE2789
+P 5050 6250
+F 0 "D?" H 5200 6400 50  0000 L CNN
+F 1 "PESD3V3S2UT" H 5050 6100 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5275 6200 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 5175 6375 50  0001 C CNN
+F 4 "https://www.terraelectronica.ru/product/289331" H 5050 6250 50  0001 C CNN "URL"
+	1    5050 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5EDE408B
+P 5050 6600
+F 0 "#PWR?" H 5050 6350 50  0001 C CNN
+F 1 "GNDD" H 5054 6445 50  0000 C CNN
+F 2 "" H 5050 6600 50  0001 C CNN
+F 3 "" H 5050 6600 50  0001 C CNN
+	1    5050 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 6450 5050 6600
+Wire Wire Line
+	5150 6050 5150 5700
+Wire Wire Line
+	4950 6050 4950 5800
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 5EDEDF2B
+P 3700 7100
+F 0 "RN?" V 3400 7100 50  0000 C CNN
+F 1 "1K5" V 3900 7100 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0402" V 3975 7100 50  0001 C CNN
+F 3 "~" H 3700 7100 50  0001 C CNN
+	1    3700 7100
+	-1   0    0    1   
+$EndComp
+Connection ~ 4950 5800
+Wire Wire Line
+	4950 5800 5850 5800
+Connection ~ 5150 5700
+Wire Wire Line
+	5150 5700 5850 5700
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EE0BEF6
+P 3650 4700
+F 0 "#PWR?" H 3650 4550 50  0001 C CNN
+F 1 "+3.3V" H 3800 4800 50  0000 C CNN
+F 2 "" H 3650 4700 50  0001 C CNN
+F 3 "" H 3650 4700 50  0001 C CNN
+	1    3650 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EE0E2DE
+P 4100 4950
+F 0 "R?" H 4000 4950 50  0000 C CNN
+F 1 "200K" V 4100 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 4950 50  0001 C CNN
+F 3 "~" H 4100 4950 50  0001 C CNN
+	1    4100 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 4700 3650 5200
+Wire Wire Line
+	4150 5800 4250 5800
+Wire Wire Line
+	2850 5700 3150 5700
+Wire Wire Line
+	2850 5800 3250 5800
+Wire Wire Line
+	4150 5700 4350 5700
+Wire Wire Line
+	3600 7300 3600 7400
+Wire Wire Line
+	3600 7400 3700 7400
+Wire Wire Line
+	3900 7400 3900 7300
+Wire Wire Line
+	3800 7300 3800 7400
+Connection ~ 3800 7400
+Wire Wire Line
+	3800 7400 3900 7400
+Wire Wire Line
+	3700 7300 3700 7400
+Connection ~ 3700 7400
+Wire Wire Line
+	3700 7400 3800 7400
+Wire Wire Line
+	4100 5100 4100 5150
+Wire Wire Line
+	4100 5150 3850 5150
+Wire Wire Line
+	3850 5150 3850 5200
+Wire Wire Line
+	4100 5150 4200 5150
+Wire Wire Line
+	4200 5150 4200 5600
+Wire Wire Line
+	4200 5600 4150 5600
+Connection ~ 4100 5150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EE2063C
+P 4100 4700
+F 0 "#PWR?" H 4100 4550 50  0001 C CNN
+F 1 "+3.3V" H 4250 4800 50  0000 C CNN
+F 2 "" H 4100 4700 50  0001 C CNN
+F 3 "" H 4100 4700 50  0001 C CNN
+	1    4100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4700 4100 4800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EE21A70
+P 3300 7350
+F 0 "#PWR?" H 3300 7200 50  0001 C CNN
+F 1 "+3.3V" H 3300 7500 50  0000 C CNN
+F 2 "" H 3300 7350 50  0001 C CNN
+F 3 "" H 3300 7350 50  0001 C CNN
+	1    3300 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 7400 3300 7400
+Wire Wire Line
+	3300 7400 3300 7350
+Connection ~ 3600 7400
+Wire Wire Line
+	3900 6900 3900 6850
+Wire Wire Line
+	3900 6850 4350 6850
+Wire Wire Line
+	3800 6900 3800 6800
+Wire Wire Line
+	3800 6800 4250 6800
+Wire Wire Line
+	3600 6900 3600 6850
+Wire Wire Line
+	3700 6900 3700 6800
+Wire Wire Line
+	4250 6800 4250 5800
+Connection ~ 4250 5800
+Wire Wire Line
+	4250 5800 4950 5800
+Wire Wire Line
+	4350 6850 4350 5700
+Connection ~ 4350 5700
+Wire Wire Line
+	4350 5700 5150 5700
+Wire Wire Line
+	3250 6800 3250 5800
+Wire Wire Line
+	3250 6800 3700 6800
+Connection ~ 3250 5800
+Wire Wire Line
+	3250 5800 3350 5800
+Wire Wire Line
+	3150 6850 3150 5700
+Wire Wire Line
+	3150 6850 3600 6850
+Connection ~ 3150 5700
+Wire Wire Line
+	3150 5700 3350 5700
+Text HLabel 2850 5700 0    50   Input ~ 0
+SCL
+Text HLabel 2850 5800 0    50   BiDi ~ 0
+SDA
+$EndSCHEMATC
