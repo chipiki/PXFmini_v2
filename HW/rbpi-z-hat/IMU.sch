@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 14 17
+Sheet 13 17
 Title ""
 Date ""
 Rev ""
@@ -45,81 +45,6 @@ F8 "ICM_INT1" O L 4450 5250 50
 F9 "ICM_INT2" O L 4450 5350 50 
 $EndSheet
 Wire Wire Line
-	5800 6450 5350 6450
-$Comp
-L Device:Ferrite_Bead L?
-U 1 1 5EE0B780
-P 3800 6450
-AR Path="/5ED663F7/5EE0B780" Ref="L?"  Part="1" 
-AR Path="/5EF65A4D/5EF663FB/5EE0B780" Ref="L?"  Part="1" 
-AR Path="/5EF65A4D/5EE0B780" Ref="L?"  Part="1" 
-AR Path="/5EE06F22/5EE0B780" Ref="L10"  Part="1" 
-F 0 "L10" V 4050 6450 50  0000 C CNN
-F 1 "Ferrite_Bead" V 3950 6450 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 3730 6450 50  0001 C CNN
-F 3 "~" H 3800 6450 50  0001 C CNN
-	1    3800 6450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5EE0B786
-P 3450 7000
-AR Path="/5ED663F7/5EE0B786" Ref="C?"  Part="1" 
-AR Path="/5EF65A4D/5EF663FB/5EE0B786" Ref="C?"  Part="1" 
-AR Path="/5EF65A4D/5EE0B786" Ref="C?"  Part="1" 
-AR Path="/5EE06F22/5EE0B786" Ref="C22"  Part="1" 
-F 0 "C22" H 3500 7100 50  0000 L CNN
-F 1 "100nF" H 3500 6900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3488 6850 50  0001 C CNN
-F 3 "" H 3450 7000 50  0001 C CNN
-	1    3450 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 6450 3450 6450
-Wire Wire Line
-	3650 6450 3450 6450
-Connection ~ 3450 6450
-Wire Wire Line
-	3450 6450 3450 6850
-Wire Wire Line
-	3450 7150 3450 7550
-$Comp
-L Device:Ferrite_Bead L?
-U 1 1 5EE0B798
-P 3800 7550
-AR Path="/5ED663F7/5EE0B798" Ref="L?"  Part="1" 
-AR Path="/5EF65A4D/5EF663FB/5EE0B798" Ref="L?"  Part="1" 
-AR Path="/5EF65A4D/5EE0B798" Ref="L?"  Part="1" 
-AR Path="/5EE06F22/5EE0B798" Ref="L11"  Part="1" 
-F 0 "L11" V 4000 7550 50  0000 C CNN
-F 1 "Ferrite_Bead" V 3650 7550 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 3730 7550 50  0001 C CNN
-F 3 "~" H 3800 7550 50  0001 C CNN
-	1    3800 7550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3650 7550 3450 7550
-Connection ~ 3450 7550
-Wire Wire Line
-	3450 7550 3200 7550
-Text Label 5800 6450 2    50   ~ 0
-IMU_VDD
-Text Label 4800 7550 2    50   ~ 0
-IMU_FGND
-$Sheet
-S 4450 6350 900  400 
-U 5EE2A025
-F0 "MIC5504_IMU" 50
-F1 "MIC5504.sch" 50
-F2 "MIC_EN" I L 4450 6550 50 
-F3 "MIC_VIN" I L 4450 6450 50 
-F4 "MIC_VOUT" I R 5350 6450 50 
-F5 "MIC_GND" I L 4450 6650 50 
-$EndSheet
-Wire Wire Line
 	4000 5600 4450 5600
 Text Label 4000 5600 0    50   ~ 0
 IMU_FGND
@@ -127,14 +52,6 @@ Wire Wire Line
 	4000 5500 4450 5500
 Text Label 4000 5500 0    50   ~ 0
 IMU_VDD
-Wire Wire Line
-	3950 6450 4450 6450
-Wire Wire Line
-	3950 7550 4400 7550
-Text HLabel 3200 6450 0    50   Input ~ 0
-IMU_VIN
-Text HLabel 3200 7550 0    50   Input ~ 0
-IMU_GND
 Wire Wire Line
 	4000 4400 4450 4400
 Text Label 4000 4400 0    50   ~ 0
@@ -179,13 +96,6 @@ LSM_nCS
 Text HLabel 3100 5100 0    50   Input ~ 0
 ICM_nCS
 Wire Wire Line
-	4400 7550 4400 6650
-Wire Wire Line
-	4400 6650 4450 6650
-Connection ~ 4400 7550
-Wire Wire Line
-	4400 7550 4800 7550
-Wire Wire Line
 	4450 3750 4300 3750
 Wire Wire Line
 	4450 3850 4300 3850
@@ -214,13 +124,52 @@ LSM_INT3
 Text HLabel 4300 4150 0    50   Output ~ 0
 LSM_INT4
 Wire Wire Line
-	4450 6550 4400 6550
-Text HLabel 4400 6550 0    50   Input ~ 0
-SENS_EN
-Wire Wire Line
 	3850 3300 3850 4800
 Wire Wire Line
 	3700 3400 3700 4900
 Wire Wire Line
 	3550 3500 3550 5000
+Wire Wire Line
+	3600 6400 3600 6650
+Wire Wire Line
+	3600 7200 3600 6950
+$Comp
+L Device:C C?
+U 1 1 5EE70328
+P 3600 6800
+AR Path="/5ED663F7/5EE70328" Ref="C?"  Part="1" 
+AR Path="/5EF65A4D/5EF663FB/5EE70328" Ref="C?"  Part="1" 
+AR Path="/5EF65A4D/5EE70328" Ref="C?"  Part="1" 
+AR Path="/5EDADA57/5EE70328" Ref="C?"  Part="1" 
+AR Path="/5EF65A4D/5EE0D50D/5EE70328" Ref="C?"  Part="1" 
+AR Path="/5EE06F22/5EE2A025/5EE70328" Ref="C?"  Part="1" 
+AR Path="/5EE06F22/5EE70328" Ref="C?"  Part="1" 
+F 0 "C?" H 3450 6900 50  0000 L CNN
+F 1 "22uF/10V" H 3200 6700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3638 6650 50  0001 C CNN
+F 3 "" H 3600 6800 50  0001 C CNN
+F 4 "https://www.terraelectronica.ru/product/1641498" H 3600 6800 50  0001 C CNN "URL"
+	1    3600 6800
+	-1   0    0    -1  
+$EndComp
+Text Notes 3500 7200 1    50   ~ 0
+CL31B226KPHNNNE
+Connection ~ 3600 6400
+Text HLabel 3100 6400 0    50   Input ~ 0
+IMU_VIN
+Wire Wire Line
+	3100 6400 3600 6400
+Text HLabel 3100 7200 0    50   Input ~ 0
+IMU_GND
+Wire Wire Line
+	3100 7200 3600 7200
+Text Label 4250 6400 2    50   ~ 0
+IMU_VDD
+Wire Wire Line
+	3600 6400 4250 6400
+Text Label 4250 7200 2    50   ~ 0
+IMU_FGND
+Wire Wire Line
+	3600 7200 4250 7200
+Connection ~ 3600 7200
 $EndSCHEMATC

@@ -38,66 +38,7 @@ F6 "BMP_VDD" U L 4850 4900 50
 F7 "BPM_GND" U L 4850 5000 50 
 $EndSheet
 Wire Wire Line
-	6200 6500 5750 6500
-Wire Wire Line
-	5300 7600 4800 7600
-$Comp
-L Device:Ferrite_Bead L?
-U 1 1 5EF7256D
-P 4400 6500
-AR Path="/5ED663F7/5EF7256D" Ref="L?"  Part="1" 
-AR Path="/5EF65A4D/5EF663FB/5EF7256D" Ref="L?"  Part="1" 
-AR Path="/5EF65A4D/5EF7256D" Ref="L2"  Part="1" 
-F 0 "L2" V 4650 6500 50  0000 C CNN
-F 1 "Ferrite_Bead" V 4550 6500 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 4330 6500 50  0001 C CNN
-F 3 "~" H 4400 6500 50  0001 C CNN
-	1    4400 6500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5EF72573
-P 4150 7050
-AR Path="/5ED663F7/5EF72573" Ref="C?"  Part="1" 
-AR Path="/5EF65A4D/5EF663FB/5EF72573" Ref="C?"  Part="1" 
-AR Path="/5EF65A4D/5EF72573" Ref="C12"  Part="1" 
-F 0 "C12" H 4200 7150 50  0000 L CNN
-F 1 "100nF" H 4200 6950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4188 6900 50  0001 C CNN
-F 3 "" H 4150 7050 50  0001 C CNN
-	1    4150 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 6500 4150 6500
-Wire Wire Line
-	4250 6500 4150 6500
-Connection ~ 4150 6500
-Wire Wire Line
-	4150 6500 4150 6900
-Wire Wire Line
-	4150 7200 4150 7600
-$Comp
-L Device:Ferrite_Bead L?
-U 1 1 5EF72585
-P 4400 7600
-AR Path="/5ED663F7/5EF72585" Ref="L?"  Part="1" 
-AR Path="/5EF65A4D/5EF663FB/5EF72585" Ref="L?"  Part="1" 
-AR Path="/5EF65A4D/5EF72585" Ref="L3"  Part="1" 
-F 0 "L3" V 4600 7600 50  0000 C CNN
-F 1 "Ferrite_Bead" V 4250 7600 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 4330 7600 50  0001 C CNN
-F 3 "~" H 4400 7600 50  0001 C CNN
-	1    4400 7600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4250 7600 4150 7600
-Text Label 6200 6500 2    50   ~ 0
-BARO_VDD
-Text Label 5300 7600 2    50   ~ 0
-BARO_FGND
+	3450 5900 3700 5900
 Wire Wire Line
 	4350 3950 4850 3950
 Text Label 4350 3950 0    50   ~ 0
@@ -114,29 +55,7 @@ Wire Wire Line
 	4350 5000 4850 5000
 Text Label 4350 5000 0    50   ~ 0
 BARO_FGND
-$Sheet
-S 4850 6400 900  400 
-U 5EE0D50D
-F0 "MIC5504_BARO" 50
-F1 "MIC5504.sch" 50
-F2 "MIC_EN" I L 4850 6600 50 
-F3 "MIC_VIN" I L 4850 6500 50 
-F4 "MIC_VOUT" I R 5750 6500 50 
-F5 "MIC_GND" I L 4850 6700 50 
-$EndSheet
-Wire Wire Line
-	4850 6700 4800 6700
-Wire Wire Line
-	4800 6700 4800 7600
-Connection ~ 4800 7600
-Wire Wire Line
-	4550 6500 4850 6500
-Wire Wire Line
-	4550 7600 4800 7600
-Wire Wire Line
-	4150 7600 3900 7600
-Connection ~ 4150 7600
-Text HLabel 3900 6500 0    50   Input ~ 0
+Text HLabel 3450 5900 0    50   Input ~ 0
 BARO_VIN
 Text HLabel 3450 3500 0    50   Input ~ 0
 BARO_MOSI
@@ -146,10 +65,10 @@ Text HLabel 3450 3700 0    50   Input ~ 0
 BARO_SCK
 Text HLabel 3450 3800 0    50   Input ~ 0
 BARO_MS_nCS
-Text HLabel 3400 4750 0    50   Input ~ 0
+Text HLabel 3450 4750 0    50   Input ~ 0
 BARO_BMP_nCS
 Wire Wire Line
-	3400 4750 4850 4750
+	3450 4750 4850 4750
 Wire Wire Line
 	3450 3800 4850 3800
 Wire Wire Line
@@ -179,6 +98,42 @@ Wire Wire Line
 Connection ~ 4050 3700
 Wire Wire Line
 	4050 3700 4850 3700
-Text HLabel 3900 7600 0    50   Input ~ 0
+Text HLabel 3450 6700 0    50   Input ~ 0
 BARO_GND
+Wire Wire Line
+	3700 5900 3700 6150
+Wire Wire Line
+	3700 6700 3700 6450
+$Comp
+L Device:C C?
+U 1 1 5EE69A69
+P 3700 6300
+AR Path="/5ED663F7/5EE69A69" Ref="C?"  Part="1" 
+AR Path="/5EF65A4D/5EF663FB/5EE69A69" Ref="C?"  Part="1" 
+AR Path="/5EF65A4D/5EE69A69" Ref="C?"  Part="1" 
+AR Path="/5EDADA57/5EE69A69" Ref="C?"  Part="1" 
+AR Path="/5EF65A4D/5EE0D50D/5EE69A69" Ref="C?"  Part="1" 
+AR Path="/5EE06F22/5EE2A025/5EE69A69" Ref="C?"  Part="1" 
+F 0 "C?" H 3550 6400 50  0000 L CNN
+F 1 "22uF/10V" H 3300 6200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3738 6150 50  0001 C CNN
+F 3 "" H 3700 6300 50  0001 C CNN
+F 4 "https://www.terraelectronica.ru/product/1641498" H 3700 6300 50  0001 C CNN "URL"
+	1    3700 6300
+	-1   0    0    -1  
+$EndComp
+Text Notes 3600 6700 1    50   ~ 0
+CL31B226KPHNNNE
+Wire Wire Line
+	3450 6700 3700 6700
+Wire Wire Line
+	4250 6700 3700 6700
+Text Label 4250 6700 2    50   ~ 0
+BARO_FGND
+Wire Wire Line
+	4250 5900 3700 5900
+Text Label 4250 5900 2    50   ~ 0
+BARO_VDD
+Connection ~ 3700 5900
+Connection ~ 3700 6700
 $EndSCHEMATC
