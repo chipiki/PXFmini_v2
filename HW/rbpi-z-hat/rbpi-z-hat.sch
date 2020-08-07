@@ -274,17 +274,9 @@ Wire Wire Line
 Wire Wire Line
 	5200 3200 5000 3200
 Wire Wire Line
-	5200 3350 4750 3350
-Wire Wire Line
-	5200 4550 5000 4550
-Wire Wire Line
-	5200 4650 5000 4650
+	5200 3350 4700 3350
 Wire Wire Line
 	5200 4750 5000 4750
-Wire Wire Line
-	5200 6100 5000 6100
-Wire Wire Line
-	5200 6200 5000 6200
 Wire Wire Line
 	5200 5150 5000 5150
 Wire Wire Line
@@ -349,22 +341,22 @@ Text Label 3350 2750 2    50   ~ 0
 UART_RTS
 Text Label 3350 2850 2    50   ~ 0
 UART_CTS
-Text Label 4750 6600 0    50   ~ 0
+Text Label 4700 6600 0    50   ~ 0
 UART_TX
-Text Label 4750 6700 0    50   ~ 0
+Text Label 4700 6700 0    50   ~ 0
 UART_RX
-Text Label 4750 6800 0    50   ~ 0
+Text Label 4700 6800 0    50   ~ 0
 UART_RTS
-Text Label 4750 6900 0    50   ~ 0
+Text Label 4700 6900 0    50   ~ 0
 UART_CTS
 Wire Wire Line
-	4750 6600 5200 6600
+	4700 6600 5200 6600
 Wire Wire Line
-	4750 6700 5200 6700
+	4700 6700 5200 6700
 Wire Wire Line
-	4750 6800 5200 6800
+	4700 6800 5200 6800
 Wire Wire Line
-	4750 6900 5200 6900
+	4700 6900 5200 6900
 Text Label 3350 3100 2    50   ~ 0
 SDA1
 Text Label 3350 3000 2    50   ~ 0
@@ -386,7 +378,7 @@ Text Label 6700 3850 2    50   ~ 0
 SENS_VDD
 Text Label 4750 2300 0    50   ~ 0
 SENS_VDD
-Text Label 4750 3350 0    50   ~ 0
+Text Label 4700 3350 0    50   ~ 0
 SENS_VDD
 Wire Wire Line
 	6200 3950 6700 3950
@@ -395,7 +387,23 @@ SENS_FGND
 Text Label 4750 2400 0    50   ~ 0
 SENS_FGND
 Wire Wire Line
-	5200 3450 4750 3450
-Text Label 4750 3450 0    50   ~ 0
+	5200 3450 4700 3450
+Text Label 4700 3450 0    50   ~ 0
 SENS_FGND
+Text Label 4700 6200 0    50   ~ 0
+SDA1
+Text Label 4700 6100 0    50   ~ 0
+SCL1
+Wire Wire Line
+	4700 6100 5200 6100
+Wire Wire Line
+	4700 6200 5200 6200
+Text Label 4700 4650 0    50   ~ 0
+SDA1
+Text Label 4700 4550 0    50   ~ 0
+SCL1
+Wire Wire Line
+	4700 4550 5200 4550
+Wire Wire Line
+	4700 4650 5200 4650
 $EndSCHEMATC
