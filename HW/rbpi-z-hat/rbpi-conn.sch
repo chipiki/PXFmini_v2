@@ -132,7 +132,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 4300 4750 4300
 Wire Wire Line
-	7250 5200 6300 5200
+	7450 5200 6300 5200
 Wire Wire Line
 	3650 5650 2300 5650
 Wire Wire Line
@@ -229,7 +229,7 @@ Wire Wire Line
 	2300 8950 2300 8850
 Connection ~ 2300 8850
 Wire Wire Line
-	2300 8850 2750 8850
+	2300 8850 3650 8850
 $Comp
 L Device:R_Pack04 RN5
 U 1 1 5DF0EFFE
@@ -249,8 +249,6 @@ Text Label 4750 4400 0    50   ~ 0
 Pin_7_PPM_SBUS_INPUT
 Wire Wire Line
 	4750 4400 5800 4400
-Text Label 2750 8850 2    50   ~ 0
-Pin_7
 Wire Wire Line
 	2300 3600 2300 3500
 Wire Wire Line
@@ -349,8 +347,8 @@ Wire Wire Line
 Connection ~ 2600 5950
 Wire Wire Line
 	2600 5950 3350 5950
-Text Label 7250 5200 2    50   ~ 0
-Pin_24_SPI1_BARO_CS
+Text Label 7450 5200 2    50   ~ 0
+Pin_24_SPI0_CE0_BARO_CS
 $Comp
 L power:+3.3V #PWR0119
 U 1 1 5DFB6CA9
@@ -405,13 +403,13 @@ Wire Wire Line
 	2100 8600 2600 8600
 Connection ~ 2600 8600
 Wire Wire Line
-	2600 8600 3650 8600
+	2600 8600 3700 8600
 Text HLabel 2100 8400 0    50   Input ~ 0
 SPI0_MISO
 Text HLabel 2100 8500 0    50   Output ~ 0
 SPI0_SCLK
 Text HLabel 2100 8600 0    50   Output ~ 0
-SPI1_CE2
+SPI0_CE0
 Text HLabel 2100 8300 0    50   Output ~ 0
 SPI0_MOSI
 Text Label 6750 5800 2    50   ~ 0
@@ -566,10 +564,10 @@ Text Label 7250 4800 2    50   ~ 0
 Pin_16_MPU_DRDY
 Text Label 7250 4900 2    50   ~ 0
 Pin_18
-Text Label 7250 5300 2    50   ~ 0
-Pin_26_SPI1_MPU_CS
+Text Label 7450 5300 2    50   ~ 0
+Pin_26_SPI0_CE1_MPU_CS
 Wire Wire Line
-	6300 5300 7250 5300
+	6300 5300 7450 5300
 Text HLabel 5450 5800 0    50   3State ~ 0
 GPIO_19
 Text Label 4750 4600 0    50   ~ 0
@@ -595,7 +593,7 @@ UART_RTS
 Text HLabel 2100 4300 0    50   Input ~ 0
 UART_CTS
 Text Label 7250 5100 2    50   ~ 0
-Pin_22_SPI1_LSM_CS
+Pin_22
 Text Label 3650 5650 2    50   ~ 0
 Pin_3_I2C2_SDA
 Text Label 3650 5750 2    50   ~ 0
@@ -629,6 +627,43 @@ Wire Wire Line
 	2100 8400 2400 8400
 Wire Wire Line
 	2100 8500 2500 8500
-Text Label 3650 8600 2    50   ~ 0
-Pin_24_SPI1_BARO_CS
+Text Label 3650 8850 2    50   ~ 0
+Pin_7_PPM_SBUS_INPUT
+Text Label 3700 8600 2    50   ~ 0
+Pin_24_SPI0_CE0_BARO_CS
+Text Label 3450 7200 2    50   ~ 0
+Pin_26_SPI0_CE1_MPU_CS
+Text HLabel 2250 7200 0    50   Output ~ 0
+SPI0_CE1
+Wire Wire Line
+	2250 7200 2400 7200
+$Comp
+L Device:R R11
+U 1 1 61110038
+P 2400 6950
+F 0 "R11" H 2470 6996 50  0000 L CNN
+F 1 "10K" H 2470 6905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2330 6950 50  0001 C CNN
+F 3 "~" H 2400 6950 50  0001 C CNN
+	1    2400 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0152
+U 1 1 61110ACC
+P 2400 6700
+F 0 "#PWR0152" H 2400 6550 50  0001 C CNN
+F 1 "+3.3V" H 2415 6873 50  0000 C CNN
+F 2 "" H 2400 6700 50  0001 C CNN
+F 3 "" H 2400 6700 50  0001 C CNN
+	1    2400 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 6700 2400 6800
+Wire Wire Line
+	2400 7100 2400 7200
+Connection ~ 2400 7200
+Wire Wire Line
+	2400 7200 3450 7200
 $EndSCHEMATC
