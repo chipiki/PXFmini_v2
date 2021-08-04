@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 16 18
+Sheet 15 17
 Title "RasPi Zero NAV Hat"
 Date "2020-08-11"
 Rev "0.1"
@@ -80,7 +80,7 @@ Wire Wire Line
 $Sheet
 S 4850 5150 900  400 
 U 5EE7A848
-F0 "sheet5EE7A825" 50
+F0 "MIC5504" 50
 F1 "MIC5504.sch" 50
 F2 "MIC_EN" I L 4850 5350 50 
 F3 "MIC_VIN" I L 4850 5250 50 
