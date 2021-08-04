@@ -4,4 +4,5 @@
   (lib (name BQ24315DSGR)(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/BQ24315DSGR.lib)(options "")(descr ""))
   (lib (name NFM21PC105B1C3D)(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/NFM21PC105B1C3D.lib)(options "")(descr ""))
   (lib (name ICM-42688-P)(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/ICM-42688-P.lib)(options "")(descr ""))
+  (lib (name bmp388)(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/bmp388.lib)(options "")(descr ""))
 )
