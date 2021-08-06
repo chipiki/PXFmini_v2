@@ -839,4 +839,8 @@ Connection ~ 6550 8850
 Wire Wire Line
 	7150 8850 7150 9150
 Connection ~ 7150 9150
+Text HLabel 6500 7650 0    50   Input ~ 0
+SERVO_POWER
+Wire Wire Line
+	6550 7650 6500 7650
 $EndSCHEMATC
