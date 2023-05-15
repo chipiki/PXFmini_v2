@@ -6,10 +6,11 @@
 
   (paper "A4" portrait)
   (title_block
-    (title "Raspberri Pi Zero Hat")
+    (title "RasPi Zero NAV Hat")
     (date "2020-06-02")
     (rev "0.1")
     (company "chipiki.ru")
+    (comment 1 "RasPi Zero NAV Hat")
   )
 
   (layers
@@ -38,6 +39,23 @@
   )
 
   (setup
+    (stackup
+      (layer "F.SilkS" (type "Top Silk Screen"))
+      (layer "F.Paste" (type "Top Solder Paste"))
+      (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
+      (layer "F.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 1" (type "core") (thickness 0.48) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "In1.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 2" (type "prepreg") (thickness 0.48) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "In2.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 3" (type "core") (thickness 0.48) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "B.Cu" (type "copper") (thickness 0.035))
+      (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
+      (layer "B.Paste" (type "Bottom Solder Paste"))
+      (layer "B.SilkS" (type "Bottom Silk Screen"))
+      (copper_finish "None")
+      (dielectric_constraints no)
+    )
     (pad_to_mask_clearance 0.05)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
@@ -5062,7 +5080,7 @@
 
   (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
     (tstamp f7fd399b-08d4-4315-92d6-40e93bf2f62d)
-    (at 68.73 63.35)
+    (at 57.15 63.35 -90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "CH32V203G6U6.kicad_sch")
@@ -5071,15 +5089,15 @@
     (property "ki_keywords" "cap capacitor")
     (path "/6f858a9a-df12-47bc-8e08-dc24a46c0b66/f16db31e-079d-4ae9-99b8-3866a5f73faa")
     (attr smd)
-    (fp_text reference "C32" (at 0 -1.43) (layer "F.SilkS")
+    (fp_text reference "C32" (at 0 -1.43 90) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8031d500-ee58-4703-9976-c4648d89141d)
     )
-    (fp_text value "0.1uF" (at 0 1.43) (layer "F.Fab")
+    (fp_text value "0.1uF" (at 0 1.43 90) (layer "F.Fab")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 848b4ef4-f61d-46c5-a684-bc621cc51f89)
     )
-    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
+    (fp_text user "${REFERENCE}" (at 0 0 90) (layer "F.Fab")
         (effects (font (size 0.4 0.4) (thickness 0.06)))
       (tstamp e103d977-a7db-47a6-b90c-7b23d5447b61)
     )
@@ -5103,9 +5121,9 @@
       (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp e1baf269-a7c9-40e2-b1c5-658abc59be6a))
     (fp_line (start 0.8 0.4) (end -0.8 0.4)
       (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 19c3b924-434b-4ea2-b350-991ee7f5a55a))
-    (pad "1" smd roundrect (at -0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
+    (pad "1" smd roundrect (at -0.775 0 270) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 81 "/CH32V203G6U6/CH32_VDD") (pintype "passive") (tstamp 0ecd6fae-680f-4175-8258-58a82514bb16))
-    (pad "2" smd roundrect (at 0.775 0) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
+    (pad "2" smd roundrect (at 0.775 0 270) (size 0.9 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 1 "GNDD") (pintype "passive") (tstamp b64ad397-33f1-4991-bee6-e74eaa08f635))
     (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
       (offset (xyz 0 0 0))

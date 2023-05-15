@@ -1693,6 +1693,10 @@
     (uuid ffda8632-4650-45f8-9eb1-f8ccbcb8e756)
   )
 
+  (text "OT322525MJBA4SL" (at 74.93 171.45 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 936ecd4a-0511-4221-89a6-dd8823d8409a)
+  )
   (text "CH32V203G6U6" (at 111.76 114.3 90)
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom))
     (uuid 9c060cec-8a80-4bf6-bdd7-8d7d0a091fdf)
