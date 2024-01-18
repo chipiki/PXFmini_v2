@@ -42,6 +42,23 @@
     (uuid ecbd1580-dd7f-4625-9278-ea6a8ecc5515)
   )
 
+  (sheet (at 85.09 142.24) (size 24.13 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 42557423-f939-4503-bf60-cce5255c597a)
+    (property "Sheetname" "QMC5883L" (at 85.09 141.5284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "QMC5883L.kicad_sch" (at 85.09 158.0646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "rbpi-z-hat"
+        (path "/d99b0340-d795-4b40-9cde-9851c6cee99d/740a9ed9-3c23-4e4f-8dd1-04f07ce4215e" (page "19"))
+      )
+    )
+  )
+
   (sheet (at 82.55 74.93) (size 24.13 21.59) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
