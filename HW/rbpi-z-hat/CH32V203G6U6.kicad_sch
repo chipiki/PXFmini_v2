@@ -2174,9 +2174,6 @@
     (pin "9" (uuid ce91dbbe-1888-45f5-8ee1-3cdd488aaf96))
     (instances
       (project "rbpi-z-hat"
-        (path "/d99b0340-d795-4b40-9cde-9851c6cee99d"
-          (reference "U7") (unit 1)
-        )
         (path "/d99b0340-d795-4b40-9cde-9851c6cee99d/6f858a9a-df12-47bc-8e08-dc24a46c0b66"
           (reference "U7") (unit 1)
         )

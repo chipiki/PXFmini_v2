@@ -1043,6 +1043,23 @@
     )
   )
 
+  (sheet (at 161.29 19.05) (size 15.24 44.45) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 740a9ed9-3c23-4e4f-8dd1-04f07ce4215e)
+    (property "Sheetname" "MAG" (at 161.29 18.3384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "MAG.kicad_sch" (at 161.29 64.0846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "rbpi-z-hat"
+        (path "/d99b0340-d795-4b40-9cde-9851c6cee99d" (page "17"))
+      )
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
   )

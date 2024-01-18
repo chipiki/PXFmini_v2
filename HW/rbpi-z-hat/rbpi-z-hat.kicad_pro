@@ -574,8 +574,16 @@
       "UART_GPS"
     ],
     [
+      "740a9ed9-3c23-4e4f-8dd1-04f07ce4215e",
+      "MAG"
+    ],
+    [
       "6f858a9a-df12-47bc-8e08-dc24a46c0b66",
       "CH32V203G6U6"
+    ],
+    [
+      "6911857f-8b28-442d-83af-e9e9a964ef3c",
+      "IST8310"
     ]
   ],
   "text_variables": {}
