@@ -280,7 +280,7 @@
     (property "Value" "22uF/10V" (at 101.6 175.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 90.4748 176.53 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 90.4748 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 91.44 172.72 0)
