@@ -4,6 +4,15 @@
 
   (paper "A4" portrait)
 
+  (title_block
+    (title "RasPi Zero NAV Hat")
+    (date "2023-05-12")
+    (rev "0.1")
+    (company "chipiki.ru")
+    (comment 1 "RasPi Zero NAV Hat")
+    (comment 2 "Denis Tsekh")
+  )
+
   (lib_symbols
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)

@@ -4,6 +4,15 @@
 
   (paper "A4" portrait)
 
+  (title_block
+    (title "RasPi Zero NAV Hat")
+    (date "2023-05-12")
+    (rev "0.1")
+    (company "chipiki.ru")
+    (comment 1 "RasPi Zero NAV Hat")
+    (comment 2 "Denis Tsekh")
+  )
+
   (lib_symbols
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)
@@ -390,7 +399,7 @@
     (property "Value" "0.1uF" (at 118.11 128.27 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 121.92 123.4948 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 121.92 123.4948 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 118.11 124.46 0)
@@ -416,7 +425,7 @@
     (property "Value" "0.1uF" (at 118.11 118.11 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 121.92 113.3348 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 121.92 113.3348 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 118.11 114.3 0)
