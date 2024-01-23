@@ -1044,6 +1044,10 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 19aa0aa5-6c5f-4c03-95d1-d272e9173cb6)
     )
+    (pin "CH32_nRST" input (at 163.83 134.62 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 6b775c31-af5f-4256-8eaa-d37c871c3f1d)
+    )
     (instances
       (project "rbpi-z-hat"
         (path "/d99b0340-d795-4b40-9cde-9851c6cee99d" (page "18"))
